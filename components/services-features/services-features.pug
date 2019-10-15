@@ -1,0 +1,5 @@
+mixin services-features(items)
+  each item in items
+    li.services-features__item.services-item
+      +services-item(item.img, item.text)
+  block

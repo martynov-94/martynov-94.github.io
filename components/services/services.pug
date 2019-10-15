@@ -1,0 +1,5 @@
+mixin services(title, items)
+  h2.services__title= title
+  ul.services__features.services-features
+    +services-features(items)
+  block

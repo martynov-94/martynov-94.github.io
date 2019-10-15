@@ -1,0 +1,20 @@
+.design {
+  &__title {
+    margin: 0 0 54px;
+
+    font-size: $H2-FONT-SIZE-DESK;
+    line-height: $H2-LINE-HEIGHT-DESK;
+
+    @media (max-width: 999px) {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 719px) {
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      font-size: $H2-FONT-SIZE-MOBILE;
+      line-height: $H2-LINE-HEIGHT-MOBILE;
+    }
+  }
+}

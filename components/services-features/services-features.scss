@@ -1,0 +1,14 @@
+.services-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
+
+  @media (max-width: 999px) {
+    gap: 40px 20px;
+  }
+
+  @media (max-width: 719px) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

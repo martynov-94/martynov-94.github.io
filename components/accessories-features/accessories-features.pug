@@ -1,0 +1,10 @@
+mixin accessories-features(items)
+  -let className = ""
+  each item in items
+    -className = "accessories-features__item accessories-item"
+    if !item.img
+      -className += " accessories-item_no-pic"
+    -className += " area-" + item.grid_area
+    li(class= className)
+      +accessories-item(item.img, item.text_big, item.text_medium, item.text_small)
+  block

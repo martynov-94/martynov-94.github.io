@@ -1,0 +1,24 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background-color: #e5e5e5;
+
+  font-weight: bold;
+  font-family: "PT Root UI", arial;
+  color: $TEXT-COLOR;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ol, ul, nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}

@@ -1,0 +1,12 @@
+mixin design-features(items)
+  -let className
+  each item in items
+    -className = "design-features__item design-item"
+    if item.main
+      -className += " design-item_main"
+    if item.no_border
+      -className += " design-item_no-border"
+    -className += " area-" + item.grid_area
+    li(class= className)
+      +design-item(item.img, item.text)
+  block

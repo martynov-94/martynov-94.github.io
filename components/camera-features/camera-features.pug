@@ -1,0 +1,5 @@
+mixin camera-features(img, items)
+  img.camera-features__picture(src=img.path alt=img.alt title=img.title)
+  ul.camera-features__list.camera-list
+    +camera-list(items)
+  block

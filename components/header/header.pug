@@ -1,0 +1,24 @@
+-
+  let logos = [
+    {
+      path: "img/logos/eldorado-logo.svg",
+      alt: "Эльдорадо",
+      title: "Эльдорадо"
+    }, 
+    {
+      path: "img/logos/mvideo-logo.svg",
+      alt: "М.Видео",
+      title: "М.Видео"
+    }
+  ]
+  let course_name = "Название курса в одну строку"
+
+mixin header()
+  .header__logos-group
+    each logo in logos
+      .header__logo-container
+        img.header__logo(src=logo.path alt=logo.alt title=logo.alt)
+  h2.header__title= course_name
+  input.header__menu-btn(type="button" value="Меню" name="show-menu")
+  label.header__menu-btn-label(for="show-menu")
+  block

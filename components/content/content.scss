@@ -1,0 +1,75 @@
+.content {
+  position: relative;
+
+  padding: 0.1px 25px;
+
+  @media(max-width: 719px) {
+    padding: 0 15px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    display: block;
+    content: "";
+    width: 20.8%;
+    height: 4px;
+
+    background-color: #d70e2a;
+    
+    @media(max-width: 719px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-size: $H1-FONT-SIZE-DESK;
+    line-height: $H1-LINE-HEIGHT-DESK;
+
+    @media(max-width: 719px) {
+      font-size: $H1-FONT-SIZE-MOBILE;
+      line-height: $H1-LINE-HEIGHT-MOBILE;
+    }
+  }
+
+  &__delimiter {
+    margin: 0;
+    height: 1px;
+    
+    background-color: black;
+    opacity: 0.3;
+  }
+
+  &__design {
+    margin: 40px 0 60px;
+  }
+
+  &__camera {
+    margin: 40px 0 100px;
+
+    @media (max-width: 719px) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__accessories {
+    margin-bottom: 60px;
+
+    @media (max-width: 719px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__services {
+    margin-top: 40px;
+
+    @media (max-width: 719px) {
+      margin-top: 20px;
+    }
+  }
+}

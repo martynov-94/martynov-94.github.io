@@ -1,0 +1,14 @@
+mixin content(data)
+  h1.content__title= data.main_title
+  .content__delimiter
+  section.content__design.design
+    +design(data.design_title, data.design_items)
+  .content__delimiter
+  section.content__camera.camera
+    +camera(data.camera_error_title, data.camera_title, data.camera_img, data.camera_items)
+  section.content__accessories.accessories
+    +accessories(data.accessories_title, data.accessories_items)
+  .content__delimiter
+  section.content__services.services
+    +services(data.services_title, data.services_items)
+  block

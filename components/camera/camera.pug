@@ -1,0 +1,6 @@
+mixin camera(error_title, title, img, items)
+  h2.camera__title_error= error_title
+  h2.camera__title= title
+  .camera__features.camera-features
+    +camera-features(img, items)
+  block

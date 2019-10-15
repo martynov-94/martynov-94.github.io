@@ -1,0 +1,7 @@
+mixin wrapper(data) 
+  header.header
+    +header(data.logos, data.course_name)
+  .phone-name
+    +phone-name(data.phone_name)
+  .content
+    +content(data)

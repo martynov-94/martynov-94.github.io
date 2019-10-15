@@ -1,0 +1,5 @@
+mixin camera-list(items)
+  each item in items
+    li.camera-list__item.camera-item
+      +camera-item(item.img, item.text)
+  block

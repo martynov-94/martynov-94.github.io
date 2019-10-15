@@ -1,0 +1,15 @@
+@media (max-width: 719px) {
+  .area-main-1 {
+    grid-area: main-1; } }
+
+@media (max-width: 719px) {
+  .area-main-2 {
+    grid-area: main-2; } }
+
+@media (max-width: 719px) {
+  .area-small-1 {
+    grid-area: small-1; } }
+
+@media (max-width: 719px) {
+  .area-small-1 {
+    grid-area: small-2; } }

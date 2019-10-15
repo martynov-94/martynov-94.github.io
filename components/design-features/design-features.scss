@@ -1,0 +1,22 @@
+.design-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  align-items: start;
+  gap: 20px 20px;
+
+  @media (max-width: 999px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 20px;
+    align-items: stretch;
+  }
+
+  @media (max-width: 719px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "main-1   main-1"
+      "small-2  small-1"
+      "main-2   main-2";
+    gap: 40px 8px;
+  }
+}
